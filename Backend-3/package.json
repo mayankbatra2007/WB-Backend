@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/mayankbatra2007/WB-Backend#readme",
   "dependencies": {
-    "ejs": "^7.0.2"
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14"
   }
 }
