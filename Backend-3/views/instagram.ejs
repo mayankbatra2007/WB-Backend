@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><% username %> |  Instagram</title>
+</head>
+<body>
+    <main class="profile">
+
+        <!-- Username -->
+        <h1>
+            @<%= username %>
+
+            <!-- Show verified badge conditionally -->
+            <% if (data.verified) { %>
+                <span class="verified">✓</span>
+            <% } %>
+        </h1>
+
+        <!-- Profile information -->
+        <h2><%= data.name %></h2>
+
+        <p><%= data.bio %></p>
+
+        <div class="stats">
+            <p><strong><%= data.posts.length %></strong> Posts</p>
+
+            <p><strong><%= data.followers %></strong> Followers</p>
+
+            <p><strong><%= data.following %></strong> Following</p>
+        </div>
+
+        <hr>
+
+        <h2>Posts</h2>
+
+        <div class="posts">
+
+            <!-- Loop through posts -->
+            <% data.posts.forEach((post) => { %>
+                <div class="post">
+                    <h3>Post #<%= post.id %></h3>
+                    <p><%= post.caption %></p>
+                </div>
+            <% }); %>
+        </div>
+    </main>
+</body>
+</html>

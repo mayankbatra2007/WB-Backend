@@ -1,0 +1,19 @@
+{
+  "mayank": {
+    "name": "Mayank",
+    "bio": "Learning Backend Development",
+    "followers": 1500,
+    "following": 350,
+    "verified": true,
+    "posts": [
+      {
+        "id": 1,
+        "caption": "Learning Node.js and Express"
+      },
+      {
+        "id": 2,
+        "caption": "Building my first EJS project"
+      }
+    ]
+  }
+}
