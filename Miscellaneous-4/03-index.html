@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h1>Student Registration</h1>
+
+    <form action="/register" method="POST">
+        <input
+            type="text"
+            name="username"
+            placeholder="Enter your name"
+        >
+        <br><br>
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+        >
+        <br><br>
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
+<!-- Understand the form attributes
+<form action="/register" method="POST"> -->
+
+<!-- action: Specifies the URL where the form data will be submitted.
+method: Specifies the HTTP method.
+name: Identifies the form field whose value will be submitted. -->
+
+<!-- For example:
+<input type="text" name="username">
+If the user enters Mayank, the submitted data will contain:
+{
+    username: "Mayank"
+} -->
